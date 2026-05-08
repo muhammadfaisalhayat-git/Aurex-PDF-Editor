@@ -29,7 +29,8 @@ async function decompressFile(gzPath, outPath) {
 
 async function main() {
     if (!existsSync(WASM_DIR)) {
-        console.log('[postbuild] No libreoffice-wasm directory found in out/, skipping.');
+        console.log(`[postbuild] Current directory: ${process.cwd()}`);
+        console.log(`[postbuild] No libreoffice-wasm directory found in out/ (Expected: ${WASM_DIR}), skipping.`);
         return;
     }
 

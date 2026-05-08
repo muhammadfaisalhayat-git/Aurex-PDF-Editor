@@ -65,6 +65,7 @@ function walkDir(dir, callback) {
 
 async function main() {
     if (!existsSync(OUT_DIR)) {
+        console.log(`[chunking] Current directory: ${process.cwd()}`);
         console.log('[chunking] Output directory (out/) not found, skipping.');
         return;
     }
