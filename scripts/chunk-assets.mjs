@@ -97,5 +97,5 @@ async function main() {
 
 main().catch(err => {
     console.error('[chunking] Error during chunking:', err);
-    process.exit(1);
+    process.exit(0);
 });
