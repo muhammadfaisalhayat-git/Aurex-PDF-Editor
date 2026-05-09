@@ -8,7 +8,7 @@
     "tauri": "tauri",
     "dev:tauri": "TAURI_ENV=true tauri dev",
     "build:tauri": "TAURI_ENV=true tauri build",
-    "build": "rm -rf out && next build && (test -d out && echo '--- OUT DIRECTORY FOUND ---' && ls -F out || (test -d .next/out && echo '--- .next/out DIRECTORY FOUND ---' && ls -F .next/out || (echo '--- NO OUTPUT DIRECTORY FOUND ---' && pwd && ls -la && ls -la .next)))",
+    "build": "rm -rf out && next build",
     "start": "next start",
     "lint": "eslint . --ext .ts,.tsx",
     "test": "vitest run",

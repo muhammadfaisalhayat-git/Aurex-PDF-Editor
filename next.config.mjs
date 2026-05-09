@@ -26,6 +26,8 @@ console.log('--- FORCING STATIC EXPORT MODE ---');
 const nextConfig = {
   // Enable static export for deployment flexibility
   output: 'export',
+  // Explicitly set output directory to 'out' as expected by Hostinger
+  distDir: 'out',
   assetPrefix: process.env.TAURI_ENV ? '/' : undefined,
 
   // Webpack configuration for WASM modules
