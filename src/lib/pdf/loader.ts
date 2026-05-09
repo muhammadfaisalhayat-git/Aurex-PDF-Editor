@@ -1,11 +1,4 @@
-/**
- * PDF Library Loader
- * Requirements: 1.4, 5.6, 8.2
- * 
- * Handles lazy loading of PDF processing libraries.
- * Libraries are loaded only when needed to optimize initial page load.
- */
-
+import '@/lib/utils/polyfills';
 import type { PDFDocument } from 'pdf-lib';
 
 // Type definitions for lazy-loaded libraries

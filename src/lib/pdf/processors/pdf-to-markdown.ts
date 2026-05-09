@@ -5,7 +5,7 @@
  * Extracts text content and attempts to preserve formatting like headings, lists, etc.
  */
 
-import * as PDFJS from 'pdfjs-dist';
+import '@/lib/utils/polyfills';
 import type {
     ProcessInput,
     ProcessOutput,
@@ -13,11 +13,7 @@ import type {
 } from '@/types/pdf';
 import { PDFErrorCode } from '@/types/pdf';
 import { BasePDFProcessor } from '../processor';
-
-// Initialize PDF.js worker
-if (typeof window !== 'undefined') {
-    PDFJS.GlobalWorkerOptions.workerSrc = '/workers/pdf.worker.min.mjs';
-}
+import { loadPdfjs } from '../loader';
 
 /**
  * PDF to Markdown options
@@ -512,6 +508,9 @@ export class PDFToMarkdownProcessor extends BasePDFProcessor {
 
         try {
             this.updateProgress(5, 'Loading PDF...');
+
+            // Load PDF.js dynamically
+            const PDFJS = await loadPdfjs();
 
             // Load PDF
             const arrayBuffer = await file.arrayBuffer();

@@ -7,6 +7,9 @@ const __dirname = path.dirname(__filename);
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
+console.log('--- NEXT.JS CONFIGURATION LOADING ---');
+console.log('--- FORCING STATIC EXPORT MODE ---');
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Enable static export for deployment flexibility
