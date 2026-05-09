@@ -4,7 +4,7 @@
 export const siteConfig = {
   name: 'Aurex PDF Editor',
   description: 'Aurex PDF Editor - Professional PDF Tools. Free, Private & Browser-Based. Merge, split, compress, convert, and edit PDF files online without uploading to servers.',
-  url: 'https://aurex.app',
+  url: 'https://aurex-pdf-editor.aurex-erp.com',
   ogImage: '/images/og-image.png',
   links: {
     github: 'https://github.com/aurex',
