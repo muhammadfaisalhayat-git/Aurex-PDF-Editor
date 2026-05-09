@@ -121,8 +121,6 @@ const nextConfig = {
       exclude: ['error', 'warn'],
     } : false,
   },
-
-  },
 };
 
 export default withNextIntl(nextConfig);
