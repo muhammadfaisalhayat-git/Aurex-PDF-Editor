@@ -2,15 +2,15 @@
  * Site configuration
  */
 export const siteConfig = {
-  name: 'Aurex PDF Editor',
-  description: 'Aurex PDF Editor - Professional PDF Tools. Free, Private & Browser-Based. Merge, split, compress, convert, and edit PDF files online without uploading to servers.',
-  url: 'https://aurex-pdf-editor.aurex-erp.com',
+  name: 'Sajeda PDF',
+  description: 'Sajeda PDF - Professional PDF Tools. Free, Private & Browser-Based. Merge, split, compress, convert, and edit PDF files online without uploading to servers.',
+  url: 'https://sajedapdf.com',
   ogImage: '/images/og-image.png',
   links: {
-    github: 'https://github.com/aurex',
-    twitter: 'https://twitter.com/aurex',
+    github: 'https://github.com/sajedapdf',
+    twitter: 'https://twitter.com/sajedapdf',
   },
-  creator: 'Aurex Team',
+  creator: 'Sajeda PDF Team',
   keywords: [
     'PDF tools',
     'PDF editor',
@@ -25,9 +25,9 @@ export const siteConfig = {
   ],
   // SEO-related settings
   seo: {
-    titleTemplate: '%s | Aurex PDF Editor',
-    defaultTitle: 'Aurex PDF Editor - Professional PDF Tools',
-    twitterHandle: '@aurex',
+    titleTemplate: '%s | Sajeda PDF',
+    defaultTitle: 'Sajeda PDF - Professional PDF Tools',
+    twitterHandle: '@sajedapdf',
     locale: 'en_US',
   },
 };

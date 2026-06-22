@@ -1,73 +1,73 @@
-// PDFCraft Chrome Extension - Background Service Worker
+// Sajeda PDF Chrome Extension - Background Service Worker
 
-const PDFCRAFT_URL = 'https://pdfcraft.devtoolcafe.com/en';
+const SAJEDA_PDF_URL = 'https://sajedapdf.com/en';
 
 // Create context menu when extension is installed
 chrome.runtime.onInstalled.addListener(() => {
     // Create main context menu item
     chrome.contextMenus.create({
-        id: 'pdfcraft-open',
-        title: 'Open with PDFCraft',
+        id: 'sajeda-pdf-open',
+        title: 'Open with Sajeda PDF',
         contexts: ['link', 'page']
     });
 
     // Create submenu for specific tools
     chrome.contextMenus.create({
-        id: 'pdfcraft-merge',
-        parentId: 'pdfcraft-open',
+        id: 'sajeda-pdf-merge',
+        parentId: 'sajeda-pdf-open',
         title: 'Merge PDFs',
         contexts: ['link', 'page']
     });
 
     chrome.contextMenus.create({
-        id: 'pdfcraft-compress',
-        parentId: 'pdfcraft-open',
+        id: 'sajeda-pdf-compress',
+        parentId: 'sajeda-pdf-open',
         title: 'Compress PDF',
         contexts: ['link', 'page']
     });
 
     chrome.contextMenus.create({
-        id: 'pdfcraft-convert',
-        parentId: 'pdfcraft-open',
+        id: 'sajeda-pdf-convert',
+        parentId: 'sajeda-pdf-open',
         title: 'Convert to PDF',
         contexts: ['link', 'page']
     });
 
     chrome.contextMenus.create({
-        id: 'pdfcraft-all-tools',
-        parentId: 'pdfcraft-open',
+        id: 'sajeda-pdf-all-tools',
+        parentId: 'sajeda-pdf-open',
         title: 'All Tools →',
         contexts: ['link', 'page']
     });
 
-    console.log('PDFCraft context menus created');
+    console.log('Sajeda PDF context menus created');
 });
 
 // Handle context menu clicks
 chrome.contextMenus.onClicked.addListener((info, tab) => {
-    let url = PDFCRAFT_URL;
+    let url = SAJEDA_PDF_URL;
 
     switch (info.menuItemId) {
-        case 'pdfcraft-merge':
-            url = `${PDFCRAFT_URL}/tools/merge-pdf`;
+        case 'sajeda-pdf-merge':
+            url = `${SAJEDA_PDF_URL}/tools/merge-pdf`;
             break;
-        case 'pdfcraft-compress':
-            url = `${PDFCRAFT_URL}/tools/compress-pdf`;
+        case 'sajeda-pdf-compress':
+            url = `${SAJEDA_PDF_URL}/tools/compress-pdf`;
             break;
-        case 'pdfcraft-convert':
-            url = `${PDFCRAFT_URL}/tools/jpg-to-pdf`;
+        case 'sajeda-pdf-convert':
+            url = `${SAJEDA_PDF_URL}/tools/jpg-to-pdf`;
             break;
-        case 'pdfcraft-all-tools':
-        case 'pdfcraft-open':
-            url = PDFCRAFT_URL;
+        case 'sajeda-pdf-all-tools':
+        case 'sajeda-pdf-open':
+            url = SAJEDA_PDF_URL;
             break;
         default:
-            url = PDFCRAFT_URL;
+            url = SAJEDA_PDF_URL;
     }
 
-    // Open PDFCraft in a new tab
+    // Open Sajeda PDF in a new tab
     chrome.tabs.create({ url: url });
 });
 
 // Log when service worker starts
-console.log('PDFCraft background service worker started');
+console.log('Sajeda PDF background service worker started');

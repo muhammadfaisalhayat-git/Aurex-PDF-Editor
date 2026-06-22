@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import '@/app/globals.css';
 
 export const metadata: Metadata = {
-  title: 'Aurex PDF Editor - Professional PDF Tools',
-  description: 'Aurex PDF Editor: Free online PDF tools for merging, splitting, compressing, and converting PDF files. All processing happens in your browser for maximum privacy.',
+  title: 'Sajeda PDF - Professional PDF Tools',
+  description: 'Sajeda PDF: Free online PDF tools for merging, splitting, compressing, and converting PDF files. All processing happens in your browser for maximum privacy.',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',

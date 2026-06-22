@@ -1,7 +1,7 @@
 {
   "metadata": {
     "home": {
-      "title": "Aurex PDF Editor - Ferramentas PDF Profissionais",
+      "title": "Sajeda PDF - Ferramentas PDF Profissionais",
       "description": "Grátis, privado e baseado em navegador. Mescle e edite arquivos PDF online sem enviar para servidores."
     },
     "tools": {
@@ -10,19 +10,19 @@
     },
     "about": {
       "title": "Sobre Nós",
-      "description": "Conheça o Aurex PDF Editor - seu kit de ferramentas PDF gratuito, privado e poderoso. Todo o processamento acontece no seu navegador."
+      "description": "Conheça o Sajeda PDF - seu kit de ferramentas PDF gratuito, privado e poderoso. Todo o processamento acontece no seu navegador."
     },
     "faq": {
       "title": "Perguntas Frequentes",
-      "description": "Encontre respostas para perguntas comuns sobre o Aurex PDF Editor. Aprenda a usar nossas ferramentas PDF de forma eficaz."
+      "description": "Encontre respostas para perguntas comuns sobre o Sajeda PDF. Aprenda a usar nossas ferramentas PDF de forma eficaz."
     },
     "privacy": {
       "title": "Política de Privacidade",
-      "description": "Política de privacidade do Aurex PDF Editor. Seus arquivos nunca saem do seu dispositivo - todo o processamento acontece localmente no seu navegador."
+      "description": "Política de privacidade do Sajeda PDF. Seus arquivos nunca saem do seu dispositivo - todo o processamento acontece localmente no seu navegador."
     },
     "contact": {
       "title": "Contato",
-      "description": "Entre em contato com a equipe do Aurex PDF Editor. Adoraríamos ouvir você."
+      "description": "Entre em contato com a equipe do Sajeda PDF. Adoraríamos ouvir você."
     },
     "keywords": {
       "pdfTools": "ferramentas PDF",
@@ -35,7 +35,7 @@
     }
   },
   "common": {
-    "brand": "Aurex PDF Editor",
+    "brand": "Sajeda PDF",
     "tagline": "Ferramentas PDF Profissionais - Grátis e Privadas",
     "navigation": {
       "home": "Início",
@@ -83,9 +83,9 @@
       "loading": "Carregando..."
     },
     "footer": {
-      "copyright": "© {year} Aurex PDF Editor. Todos os direitos reservados.",
+      "copyright": "© {year} Sajeda PDF. Todos os direitos reservados.",
       "privacyBadge": "100% Privado - Os arquivos nunca saem do seu dispositivo",
-      "footer": "© 2025 Aurex PDF Editor. Todos os direitos reservados.",
+      "footer": "© 2025 Sajeda PDF. Todos os direitos reservados.",
       "madeWith": "Feito com <Heart /> e <Nextjs />"
     },
     "recentFiles": {
@@ -129,7 +129,7 @@
       "finish": "Finalizar",
       "skip": "Pular",
       "stepOf": "de",
-      "welcomeTitle": "Bem-vindo ao Aurex PDF Editor!",
+      "welcomeTitle": "Bem-vindo ao Sajeda PDF!",
       "welcomeMessage": "Gostaria de um tour rápido para aprender a usar nossas ferramentas PDF? Leva apenas um minuto.",
       "helpButton": "Tour de Ajuda"
     },
@@ -156,16 +156,16 @@
       "sections": {
         "general": {
           "whatIs": {
-            "question": "O que é o Aurex PDF Editor?",
-            "answer": "O Aurex PDF Editor é um conjunto de ferramentas PDF gratuito e focado na privacidade que funciona inteiramente no seu navegador. Ele oferece mais de 67 ferramentas profissionais para editar, converter, mesclar, dividir e proteger arquivos PDF sem enviá-los para nenhum servidor."
+            "question": "O que é o Sajeda PDF?",
+            "answer": "O Sajeda PDF é um conjunto de ferramentas PDF gratuito e focado na privacidade que funciona inteiramente no seu navegador. Ele oferece mais de 67 ferramentas profissionais para editar, converter, mesclar, dividir e proteger arquivos PDF sem enviá-los para nenhum servidor."
           },
           "isFree": {
-            "question": "O Aurex PDF Editor é realmente gratuito?",
-            "answer": "Sim, o Aurex PDF Editor é totalmente gratuito. Não há custos ocultos, planos premium ou necessidade de cadastro. Todos os recursos estão disponíveis para todos."
+            "question": "O Sajeda PDF é realmente gratuito?",
+            "answer": "Sim, o Sajeda PDF é totalmente gratuito. Não há custos ocultos, planos premium ou necessidade de cadastro. Todos os recursos estão disponíveis para todos."
           },
           "account": {
             "question": "Preciso criar uma conta?",
-            "answer": "Não, você não precisa criar uma conta nem se cadastrar para usar o Aurex PDF Editor. Basta acessar o site e começar a usar qualquer ferramenta imediatamente."
+            "answer": "Não, você não precisa criar uma conta nem se cadastrar para usar o Sajeda PDF. Basta acessar o site e começar a usar qualquer ferramenta imediatamente."
           }
         },
         "privacy": {
@@ -174,8 +174,8 @@
             "answer": "Não, seus arquivos nunca são enviados para nenhum servidor. Todo o processamento de PDF acontece localmente no seu navegador usando JavaScript e WebAssembly. Seus arquivos nunca saem do seu dispositivo."
           },
           "safe": {
-            "question": "É seguro usar o Aurex PDF Editor com documentos sensíveis?",
-            "answer": "Sim, o Aurex PDF Editor foi projetado com foco em privacidade. Como todo o processamento acontece localmente no navegador, seus documentos sensíveis permanecem no seu dispositivo e nunca são transmitidos pela internet."
+            "question": "É seguro usar o Sajeda PDF com documentos sensíveis?",
+            "answer": "Sim, o Sajeda PDF foi projetado com foco em privacidade. Como todo o processamento acontece localmente no navegador, seus documentos sensíveis permanecem no seu dispositivo e nunca são transmitidos pela internet."
           },
           "storage": {
             "question": "O que acontece com meus arquivos após o processamento?",
@@ -185,7 +185,7 @@
         "features": {
           "operations": {
             "question": "Quais operações de PDF posso realizar?",
-            "answer": "O Aurex PDF Editor oferece mais de 67 ferramentas, incluindo: mesclar, dividir, comprimir, converter (de/para imagens, texto, JSON), editar, anotar, assinar, adicionar marcas d'água, criptografar/descriptografar, OCR e muito mais."
+            "answer": "O Sajeda PDF oferece mais de 67 ferramentas, incluindo: mesclar, dividir, comprimir, converter (de/para imagens, texto, JSON), editar, anotar, assinar, adicionar marcas d'água, criptografar/descriptografar, OCR e muito mais."
           },
           "merge": {
             "question": "Posso mesclar vários arquivos PDF?",
@@ -193,17 +193,17 @@
           },
           "images": {
             "question": "Posso converter imagens em PDF?",
-            "answer": "Sim, o Aurex PDF Editor suporta a conversão de vários formatos de imagem (JPG, PNG, WebP, BMP, TIFF, SVG, HEIC) para PDF. Você pode converter uma ou várias imagens de uma vez."
+            "answer": "Sim, o Sajeda PDF suporta a conversão de vários formatos de imagem (JPG, PNG, WebP, BMP, TIFF, SVG, HEIC) para PDF. Você pode converter uma ou várias imagens de uma vez."
           },
           "edit": {
             "question": "Posso editar texto em um PDF?",
-            "answer": "O Aurex PDF Editor oferece ferramentas de anotação e edição, incluindo destaque, adição de texto, formas, imagens e assinaturas. Para edição completa de texto, a ferramenta Editor de PDF oferece recursos abrangentes de anotação."
+            "answer": "O Sajeda PDF oferece ferramentas de anotação e edição, incluindo destaque, adição de texto, formas, imagens e assinaturas. Para edição completa de texto, a ferramenta Editor de PDF oferece recursos abrangentes de anotação."
           }
         },
         "technical": {
           "browsers": {
             "question": "Quais navegadores são suportados?",
-            "answer": "O Aurex PDF Editor funciona em todos os navegadores modernos, incluindo Chrome, Firefox, Safari e Edge. Recomendamos usar a versão mais recente do seu navegador para obter a melhor experiência."
+            "answer": "O Sajeda PDF funciona em todos os navegadores modernos, incluindo Chrome, Firefox, Safari e Edge. Recomendamos usar a versão mais recente do seu navegador para obter a melhor experiência."
           },
           "sizeLimit": {
             "question": "Existe limite de tamanho de arquivo?",
@@ -214,14 +214,14 @@
             "answer": "Como todo o processamento acontece no navegador, o desempenho depende da capacidade do seu dispositivo. Arquivos grandes exigem mais memória e poder de processamento. Para melhores resultados, feche outras abas e aplicativos."
           },
           "offline": {
-            "question": "O Aurex PDF Editor funciona offline?",
-            "answer": "Atualmente, o Aurex PDF Editor requer conexão com a internet para carregar o aplicativo. Porém, depois de carregado, o processamento de PDF acontece localmente e não exige conexão."
+            "question": "O Sajeda PDF funciona offline?",
+            "answer": "Atualmente, o Sajeda PDF requer conexão com a internet para carregar o aplicativo. Porém, depois de carregado, o processamento de PDF acontece localmente e não exige conexão."
           }
         },
         "languages": {
           "supported": {
             "question": "Quais idiomas são suportados?",
-            "answer": "O Aurex PDF Editor está disponível em 9 idiomas: Inglês, Japonês, Coreano, Espanhol, Francês, Alemão, Chinês, Português e Árabe (com suporte RTL)."
+            "answer": "O Sajeda PDF está disponível em 9 idiomas: Inglês, Japonês, Coreano, Espanhol, Francês, Alemão, Chinês, Português e Árabe (com suporte RTL)."
           },
           "change": {
             "question": "Como altero o idioma?",
@@ -252,7 +252,7 @@
         },
         "fast": {
           "title": "Rápido e Eficiente",
-          "description": "Impulsionado por tecnologias web modernas, o Aurex PDF Editor oferece processamento de PDF extremamente rápido sem necessidade de uploads ou downloads."
+          "description": "Impulsionado por tecnologias web modernas, o Sajeda PDF oferece processamento de PDF extremamente rápido sem necessidade de uploads ou downloads."
         },
         "accessible": {
           "title": "Acessível em Qualquer Lugar",
@@ -260,7 +260,7 @@
         },
         "free": {
           "title": "Gratuito para Sempre",
-          "description": "O Aurex PDF Editor é totalmente gratuito, sem custos ocultos, sem necessidade de cadastro e sem limites de uso."
+          "description": "O Sajeda PDF é totalmente gratuito, sem custos ocultos, sem necessidade de cadastro e sem limites de uso."
         },
         "openSource": {
           "title": "Código Aberto",
@@ -298,7 +298,7 @@
         "email": {
           "title": "Email",
           "description": "Envie-nos um email e responderemos dentro de 24-48 horas.",
-          "action": "contact@aurex.app"
+          "action": "contact@sajedapdf.com"
         },
         "github": {
           "title": "GitHub",
@@ -308,7 +308,7 @@
         "twitter": {
           "title": "Twitter",
           "description": "Siga-nos para atualizações e anúncios.",
-          "action": "@Aurex PDF Editor"
+          "action": "@Sajeda PDF"
         }
       },
       "form": {
@@ -399,7 +399,8 @@
     "invalidPageRange": "Intervalo de páginas inválido especificado.",
     "invalidOptions": "Opções inválidas fornecidas.",
     "unknown": "Ocorreu um erro inesperado. Por favor, tente novamente.",
-    "toolNotFound": "Ferramenta não encontrada"
+    "toolNotFound": "Ferramenta não encontrada",
+    "invalidPassword": "A senha inserida está incorreta. Verifique e tente novamente."
   },
   "home": {
     "hero": {
@@ -459,7 +460,7 @@
   "workflow": {
     "title": "Editor de Fluxo de Trabalho PDF",
     "subtitle": "Crie pipelines de processamento PDF personalizados conectando ferramentas",
-    "metaTitle": "Editor de Fluxo de Trabalho PDF - Aurex PDF Editor",
+    "metaTitle": "Editor de Fluxo de Trabalho PDF - Sajeda PDF",
     "metaDescription": "Crie pipelines de processamento PDF personalizados conectando ferramentas visualmente. Construa, salve e reutilize seus fluxos de trabalho.",
     "toolbox": "Caixa de Ferramentas",
     "dragToAdd": "Arraste ferramentas para adicionar ao fluxo de trabalho",
@@ -2188,16 +2189,16 @@
     "sections": {
       "general": {
         "whatIs": {
-          "question": "O que é o Aurex PDF Editor?",
-          "answer": "O Aurex PDF Editor é um conjunto de ferramentas PDF gratuito e focado na privacidade que funciona inteiramente no seu navegador. Ele oferece mais de {count} ferramentas profissionais para editar, converter, mesclar, dividir e criptografar arquivos PDF sem nunca enviá-los para um servidor."
+          "question": "O que é o Sajeda PDF?",
+          "answer": "O Sajeda PDF é um conjunto de ferramentas PDF gratuito e focado na privacidade que funciona inteiramente no seu navegador. Ele oferece mais de {count} ferramentas profissionais para editar, converter, mesclar, dividir e criptografar arquivos PDF sem nunca enviá-los para um servidor."
         },
         "isFree": {
-          "question": "O Aurex PDF Editor é realmente gratuito?",
-          "answer": "Sim, o Aurex PDF Editor é totalmente gratuito. Não há taxas ocultas, assinaturas premium ou obrigatoriedade de registro. Todos os recursos estão disponíveis para todos."
+          "question": "O Sajeda PDF é realmente gratuito?",
+          "answer": "Sim, o Sajeda PDF é totalmente gratuito. Não há taxas ocultas, assinaturas premium ou obrigatoriedade de registro. Todos os recursos estão disponíveis para todos."
         },
         "account": {
           "question": "Preciso criar uma conta?",
-          "answer": "Não, você não precisa criar uma conta ou se registrar para usar o Aurex PDF Editor. Basta visitar o site e começar a usar qualquer ferramenta imediatamente."
+          "answer": "Não, você não precisa criar uma conta ou se registrar para usar o Sajeda PDF. Basta visitar o site e começar a usar qualquer ferramenta imediatamente."
         }
       },
       "privacy": {
@@ -2206,8 +2207,8 @@
           "answer": "Não, seus arquivos nunca são enviados para um servidor. Todo o processamento de PDF é feito localmente no seu navegador usando JavaScript e WebAssembly. Seus arquivos nunca saem do seu dispositivo."
         },
         "safe": {
-          "question": "É seguro usar o Aurex PDF Editor para documentos sensíveis?",
-          "answer": "Sim, o Aurex PDF Editor foi projetado com a privacidade como prioridade. Como todo o processamento ocorre localmente no seu navegador, seus documentos sensíveis permanecem no seu dispositivo e nunca são transmitidos pela Internet."
+          "question": "É seguro usar o Sajeda PDF para documentos sensíveis?",
+          "answer": "Sim, o Sajeda PDF foi projetado com a privacidade como prioridade. Como todo o processamento ocorre localmente no seu navegador, seus documentos sensíveis permanecem no seu dispositivo e nunca são transmitidos pela Internet."
         },
         "storage": {
           "question": "O que acontece com meus arquivos após o processamento?",
@@ -2217,7 +2218,7 @@
       "features": {
         "operations": {
           "question": "Quais operações de PDF posso realizar?",
-          "answer": "O Aurex PDF Editor oferece mais de {count} ferramentas, incluindo: mesclar, dividir, comprimir, converter (de/para imagens, texto, JSON), editar, anotar, assinar, adicionar marcas d'água, criptografar/descriptografar, OCR e muito mais."
+          "answer": "O Sajeda PDF oferece mais de {count} ferramentas, incluindo: mesclar, dividir, comprimir, converter (de/para imagens, texto, JSON), editar, anotar, assinar, adicionar marcas d'água, criptografar/descriptografar, OCR e muito mais."
         },
         "merge": {
           "question": "Posso mesclar vários arquivos PDF?",
@@ -2225,17 +2226,17 @@
         },
         "images": {
           "question": "Posso converter imagens em PDF?",
-          "answer": "Sim, o Aurex PDF Editor suporta a conversão de vários formatos de imagem (JPG, PNG, WebP, BMP, TIFF, SVG, HEIC) para PDF. Você pode converter uma ou várias imagens de uma vez."
+          "answer": "Sim, o Sajeda PDF suporta a conversão de vários formatos de imagem (JPG, PNG, WebP, BMP, TIFF, SVG, HEIC) para PDF. Você pode converter uma ou várias imagens de uma vez."
         },
         "edit": {
           "question": "Posso editar o texto de um PDF?",
-          "answer": "O Aurex PDF Editor oferece ferramentas de anotação e edição que incluem destaque, adição de texto, formas, imagens e assinaturas. Para edição completa de texto, a ferramenta Editor de PDF fornece funcionalidades abrangentes de anotação."
+          "answer": "O Sajeda PDF oferece ferramentas de anotação e edição que incluem destaque, adição de texto, formas, imagens e assinaturas. Para edição completa de texto, a ferramenta Editor de PDF fornece funcionalidades abrangentes de anotação."
         }
       },
       "technical": {
         "browsers": {
           "question": "Quais navegadores são suportados?",
-          "answer": "O Aurex PDF Editor funciona em todos os navegadores modernos, incluindo Chrome, Firefox, Safari e Edge. Recomendamos o uso da versão mais recente do seu navegador para uma melhor experiência."
+          "answer": "O Sajeda PDF funciona em todos os navegadores modernos, incluindo Chrome, Firefox, Safari e Edge. Recomendamos o uso da versão mais recente do seu navegador para uma melhor experiência."
         },
         "sizeLimit": {
           "question": "Existe um limite de tamanho de arquivo?",
@@ -2246,14 +2247,14 @@
           "answer": "Como todo o processamento é feito no navegador, o desempenho depende das capacidades do seu dispositivo. Arquivos grandes exigem mais memória e poder de processamento. Para melhores resultados, feche outras abas e aplicativos."
         },
         "offline": {
-          "question": "O Aurex PDF Editor funciona offline?",
-          "answer": "Atualmente, o Aurex PDF Editor requer uma conexão com a Internet para carregar o aplicativo inicialmente. No entanto, uma vez carregado, o processamento de PDF ocorre localmente e não requer conexão."
+          "question": "O Sajeda PDF funciona offline?",
+          "answer": "Atualmente, o Sajeda PDF requer uma conexão com a Internet para carregar o aplicativo inicialmente. No entanto, uma vez carregado, o processamento de PDF ocorre localmente e não requer conexão."
         }
       },
       "languages": {
         "supported": {
           "question": "Quais idiomas são suportados?",
-          "answer": "O Aurex PDF Editor está disponível em 9 idiomas: Inglês, Japonês, Coreano, Espanhol, Francês, Alemão, Chinês, Português e Árabe (com suporte para leitura da direita para a esquerda)."
+          "answer": "O Sajeda PDF está disponível em 9 idiomas: Inglês, Japonês, Coreano, Espanhol, Francês, Alemão, Chinês, Português e Árabe (com suporte para leitura da direita para a esquerda)."
         },
         "change": {
           "question": "Como posso mudar o idioma?",
@@ -2284,7 +2285,7 @@
       },
       "fast": {
         "title": "Rápido e Eficiente",
-        "description": "Impulsionado por tecnologias web modernas, o Aurex PDF Editor oferece processamento de PDF extremamente rápido sem a necessidade de uploads ou downloads."
+        "description": "Impulsionado por tecnologias web modernas, o Sajeda PDF oferece processamento de PDF extremamente rápido sem a necessidade de uploads ou downloads."
       },
       "accessible": {
         "title": "Acessível em Qualquer Lugar",
@@ -2292,7 +2293,7 @@
       },
       "free": {
         "title": "Gratuito para Sempre",
-        "description": "O Aurex PDF Editor é totalmente gratuito para usar, sem custos ocultos, sem necessidade de registro e sem limites de uso."
+        "description": "O Sajeda PDF é totalmente gratuito para usar, sem custos ocultos, sem necessidade de registro e sem limites de uso."
       },
       "openSource": {
         "title": "Código Aberto",
@@ -2330,7 +2331,7 @@
       "email": {
         "title": "E-mail",
         "description": "Envie-nos um e-mail e responderemos dentro de 24 a 48 horas.",
-        "action": "contact@aurex.app"
+        "action": "contact@sajedapdf.com"
       },
       "github": {
         "title": "GitHub",
@@ -2340,7 +2341,7 @@
       "twitter": {
         "title": "Twitter",
         "description": "Siga-nos para atualizações e anúncios.",
-        "action": "@Aurex PDF Editor"
+        "action": "@Sajeda PDF"
       }
     },
     "form": {
@@ -2389,4 +2390,3 @@
     }
   }
 }
-

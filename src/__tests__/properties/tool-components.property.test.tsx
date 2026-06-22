@@ -12,6 +12,28 @@ vi.mock('next/link', () => ({
     React.createElement('a', { href, ...props }, children),
 }));
 
+// Mock next/navigation
+vi.mock('next/navigation', () => ({
+  useRouter: () => ({
+    push: vi.fn(),
+    replace: vi.fn(),
+    prefetch: vi.fn(),
+  }),
+  usePathname: () => '/en/tools',
+}));
+
+// Mock next-intl
+vi.mock('next-intl', () => ({
+  useTranslations: () => (key: string) => {
+    const translations: Record<string, string> = {
+      'brand': 'Sajeda PDF',
+      'tagline': 'Professional PDF Tools - Free & Private',
+      'common.brand': 'Sajeda PDF',
+    };
+    return translations[key] || key;
+  },
+}));
+
 describe('Tool Component Property Tests', () => {
   /**
    * **Feature: nextjs-pdf-toolkit, Property 3: Tool Card Rendering**
@@ -34,7 +56,7 @@ describe('Tool Component Property Tests', () => {
             expect(toolCard).toBeInTheDocument();
             
             // Icon should be present
-            const iconElement = screen.getByTestId('tool-card-icon');
+            const iconElement = screen.getAllByTestId('tool-card-icon')[0];
             expect(iconElement).toBeInTheDocument();
             
             // Name should be present and contain the tool name
@@ -106,7 +128,7 @@ describe('Tool Component Property Tests', () => {
           (tool) => {
             const { unmount } = render(<ToolCard tool={tool} locale="en" />);
             
-            const iconElement = screen.getByTestId('tool-card-icon');
+            const iconElement = screen.getAllByTestId('tool-card-icon')[0];
             const svgElement = iconElement.querySelector('svg');
             
             expect(svgElement).toBeInTheDocument();

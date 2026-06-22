@@ -338,12 +338,19 @@ export const FileUploader: React.FC<FileUploaderProps> = ({
         )}
       </div>
 
-      {/* File info hints - only show when multiple files allowed */}
-      {multiple && (
-        <div className="mt-6 flex flex-wrap gap-2 justify-center">
-          <span className="text-xs px-2 py-1 rounded-md bg-[hsl(var(--color-muted))] text-[hsl(var(--color-muted-foreground))]">
-            Files: {maxFiles}
-          </span>
+      {/* File info hints - displays limits to the user */}
+      {(maxSize !== Infinity || multiple) && (
+        <div className="mt-6 flex flex-wrap gap-2 justify-center text-xs text-[hsl(var(--color-muted-foreground))]" data-testid="uploader-limits">
+          {maxSize !== Infinity && (
+            <span className="px-2 py-1 rounded-md bg-[hsl(var(--color-muted))] text-[hsl(var(--color-muted-foreground))]">
+              Max size: {Math.round(maxSize / (1024 * 1024))}MB
+            </span>
+          )}
+          {multiple && (
+            <span className="px-2 py-1 rounded-md bg-[hsl(var(--color-muted))] text-[hsl(var(--color-muted-foreground))]">
+              Max files: {maxFiles}
+            </span>
+          )}
         </div>
       )}
 

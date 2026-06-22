@@ -184,7 +184,7 @@ export const Header: React.FC<HeaderProps> = ({ locale, showSearch = true }) => 
               <div className="relative flex h-9 w-9 items-center justify-center transition-transform group-hover:scale-105">
                 <Image
                   src="/images/logo.png"
-                  alt="Aurex PDF Editor Logo"
+                  alt="Sajeda PDF Logo"
                   width={36}
                   height={36}
                   className="object-contain"
@@ -315,7 +315,7 @@ export const Header: React.FC<HeaderProps> = ({ locale, showSearch = true }) => 
 
             {/* GitHub Repository Link */}
             <a
-              href="https://github.com/aurex"
+              href="https://github.com/sajedapdf"
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:flex items-center justify-center h-9 w-9 rounded-lg text-[hsl(var(--color-muted-foreground))] hover:text-[hsl(var(--color-foreground))] hover:bg-[hsl(var(--color-muted))/0.5] transition-all"
@@ -372,7 +372,7 @@ export const Header: React.FC<HeaderProps> = ({ locale, showSearch = true }) => 
               {/* GitHub Link in Mobile Menu */}
               <li>
                 <a
-                  href="https://github.com/aurex"
+                  href="https://github.com/sajedapdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 px-4 py-3 text-base font-medium text-[hsl(var(--color-foreground))] hover:bg-[hsl(var(--color-muted))] rounded-lg transition-colors"

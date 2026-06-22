@@ -14,7 +14,7 @@ export const dynamic = 'force-static';
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: siteConfig.name,
-    short_name: 'Aurex PDF',
+    short_name: 'Sajeda PDF',
     description: siteConfig.description,
     start_url: '/',
     display: 'standalone',
