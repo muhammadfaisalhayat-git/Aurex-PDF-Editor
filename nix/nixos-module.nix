@@ -1,17 +1,17 @@
 { config, lib, pkgs, ... }:
 
 let
-  cfg = config.services.pdfcraft;
+  cfg = config.services.sajeda-pdf;
 in
 {
-  options.services.pdfcraft = {
-    enable = lib.mkEnableOption "PDFCraft - Professional PDF Tools";
+  options.services.sajeda-pdf = {
+    enable = lib.mkEnableOption "Sajeda PDF - Professional PDF Tools";
 
     package = lib.mkOption {
       type = lib.types.package;
-      default = pkgs.pdfcraft;
-      defaultText = lib.literalExpression "pkgs.pdfcraft";
-      description = "The PDFCraft package to use.";
+      default = pkgs.sajeda-pdf;
+      defaultText = lib.literalExpression "pkgs.sajeda-pdf";
+      description = "The Sajeda PDF package to use.";
     };
 
     port = lib.mkOption {
@@ -30,25 +30,25 @@ in
   config = lib.mkIf cfg.enable {
     nixpkgs.overlays = [
       (final: prev: {
-        pdfcraft = final.callPackage ./package.nix { };
+        sajeda-pdf = final.callPackage ./package.nix { };
       })
     ];
 
-    systemd.services.pdfcraft = {
-      description = "PDFCraft PDF Tools";
+    systemd.services.sajeda-pdf = {
+      description = "Sajeda PDF PDF Tools";
       after = [ "network.target" ];
       wantedBy = [ "multi-user.target" ];
 
       environment = {
-        PDFCRAFT_PORT = toString cfg.port;
+        SAJEDA_PDF_PORT = toString cfg.port;
       };
 
       serviceConfig = {
-        ExecStart = "${cfg.package}/bin/pdfcraft";
+        ExecStart = "${cfg.package}/bin/sajeda-pdf";
         Restart = "on-failure";
         DynamicUser = true;
-        RuntimeDirectory = "pdfcraft";
-        StateDirectory = "pdfcraft";
+        RuntimeDirectory = "sajeda-pdf";
+        StateDirectory = "sajeda-pdf";
 
         # Hardening
         NoNewPrivileges = true;

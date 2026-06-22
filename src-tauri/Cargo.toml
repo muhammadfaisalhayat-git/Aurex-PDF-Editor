@@ -1,8 +1,8 @@
 [package]
-name = "pdfcraft"
+name = "sajeda-pdf"
 version = "0.1.0"
-description = "PDFCraft Desktop Application"
-authors = ["PDFCraft"]
+description = "Sajeda PDF Desktop Application"
+authors = ["Sajeda PDF Team"]
 edition = "2021"
 
 [build-dependencies]

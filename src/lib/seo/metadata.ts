@@ -148,6 +148,74 @@ export function generateBaseMetadata(options: PageMetadataOptions): Metadata {
 }
 
 /**
+ * Get localized suffix for tool title tag
+ */
+function getLocalizedSuffix(locale: Locale): string {
+  const suffixes: Record<string, string> = {
+    en: 'Online - Free & Secure PDF Tool',
+    es: 'en Línea - Herramienta PDF Gratis y Segura',
+    fr: 'en Ligne - Outil PDF Gratuit et Sécurisé',
+    de: 'Online - Kostenloses & Sicheres PDF-Tool',
+    ja: 'オンライン - 無料で安全なPDFツール',
+    ko: '온라인 - 무료 및 안전한 PDF 도구',
+    zh: '在线 - 免费安全的PDF工具',
+    'zh-TW': '線上 - 免費安全的PDF工具',
+    pt: 'Online - Ferramenta PDF Gratuita e Segura',
+    ar: 'عبر الإنترنت - أداة PDF مجانية وآمنة',
+    it: 'Online - Strumento PDF Gratuito e Sicuro',
+    id: 'Online - Alat PDF Gratis & Aman',
+    vi: 'Trực tuyến - Công cụ PDF Miễn phí & Bảo mật',
+  };
+  return suffixes[locale] || suffixes.en;
+}
+
+/**
+ * Get optimized keyword-rich title for tool pages
+ */
+function getOptimizedToolTitle(toolId: string, title: string, locale: Locale, metaTitleOverride?: string): string {
+  if (metaTitleOverride) {
+    return metaTitleOverride;
+  }
+
+  if (locale === 'en') {
+    const enTitles: Record<string, string> = {
+      'pdf-multi-tool': 'PDF Multi Tool Online - Merge, Split & Edit PDF Free',
+      'merge-pdf': 'Merge PDF Online - Combine PDF Files Free',
+      'split-pdf': 'Split PDF Online - Extract Pages from PDF Free',
+      'compress-pdf': 'Compress PDF Online - Reduce PDF File Size',
+      'edit-pdf': 'Free PDF Editor - Edit PDF Files Online',
+      'jpg-to-pdf': 'JPG to PDF Converter - Convert Images to PDF Online',
+      'png-to-pdf': 'PNG to PDF Converter - Convert PNG to PDF Online',
+      'pdf-to-jpg': 'PDF to JPG Converter - Extract Images from PDF',
+      'pdf-to-png': 'PDF to PNG Converter - Convert PDF Pages to Images',
+      'word-to-pdf': 'Convert Word to PDF Online - Free Docx to PDF',
+      'pdf-to-docx': 'Convert PDF to Word Online - Free PDF to Docx',
+      'excel-to-pdf': 'Convert Excel to PDF Online - Free XLS to PDF',
+      'pdf-to-excel': 'Convert PDF to Excel Online - Free PDF to Spreadsheet',
+      'ocr-pdf': 'OCR PDF Online - Convert Scanned PDF to Searchable Text',
+      'sign-pdf': 'Sign PDF Online - Secure Electronic Signature for PDF',
+      'encrypt-pdf': 'Protect PDF Online - Encrypt PDF with Password',
+      'decrypt-pdf': 'Unlock PDF Online - Remove Password from PDF',
+      'add-watermark': 'Add Watermark to PDF - Watermark PDF Online',
+      'crop-pdf': 'Crop PDF Online - Crop PDF Pages Free',
+      'organize-pdf': 'Organize PDF Pages - Rearrange PDF Online',
+      'delete-pages': 'Delete Pages from PDF Online - Remove PDF Pages',
+      'rotate-pdf': 'Rotate PDF Online - Rotate and Save PDF Pages',
+      'repair-pdf': 'Repair PDF Online - Fix Damaged PDF Files',
+      'sanitize-pdf': 'Sanitize PDF - Remove Hidden Meta Data from PDF',
+      'find-and-redact': 'Redact PDF Online - Black Out PDF Text Securely',
+      'flatten-pdf': 'Flatten PDF Online - Flatten Forms and Fields in PDF',
+    };
+    if (enTitles[toolId]) {
+      return enTitles[toolId];
+    }
+  }
+
+  const suffix = getLocalizedSuffix(locale);
+  return `${title} ${suffix}`;
+}
+
+/**
  * Generate metadata for tool pages
  */
 export function generateToolMetadata(options: ToolMetadataOptions): Metadata {
@@ -156,7 +224,7 @@ export function generateToolMetadata(options: ToolMetadataOptions): Metadata {
 
   // Enhance keywords with common PDF-related terms
   const enhancedKeywords = [
-    ...content.keywords,
+    ...(content.keywords || []),
     'free',
     'online',
     'no registration',
@@ -165,10 +233,14 @@ export function generateToolMetadata(options: ToolMetadataOptions): Metadata {
     'private',
   ];
 
+  // Resolve custom optional metaTitle override if defined in ToolContent
+  const metaTitleOverride = (content as any).metaTitle;
+  const seoTitle = getOptimizedToolTitle(tool.id, content.title, locale, metaTitleOverride);
+
   return generateBaseMetadata({
     locale,
     path,
-    title: content.title,
+    title: seoTitle,
     description: content.metaDescription,
     keywords: enhancedKeywords,
   });

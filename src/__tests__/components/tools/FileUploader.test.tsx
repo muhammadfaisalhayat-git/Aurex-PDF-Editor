@@ -5,17 +5,24 @@ import { FileUploader } from '@/components/tools/FileUploader';
 
 // Mock next-intl
 vi.mock('next-intl', () => ({
-  useTranslations: () => (key: string, params?: Record<string, unknown>) => {
+  useTranslations: (namespace?: string) => (key: string, params?: Record<string, unknown>) => {
+    if (namespace === 'errors') {
+      if (key === 'fileTooLarge') {
+        return `File size exceeds ${params?.maxSize}MB limit`;
+      }
+      if (key === 'fileTypeInvalid') {
+        return `Invalid file type. Accepted: ${params?.acceptedTypes}`;
+      }
+      return key;
+    }
     const translations: Record<string, string> = {
       'buttons.upload': 'Upload Files',
       'buttons.cancel': 'Cancel',
+      'fileUploader.dragDrop': 'Drag and drop files here or click to upload',
+      'fileUploader.support': 'application/pdf, image/png',
+      'fileUploader.paste': 'Paste',
+      'fileUploader.dropToUpload': 'Drop files here',
     };
-    if (key === 'fileTooLarge') {
-      return `File size exceeds ${params?.maxSize}MB limit`;
-    }
-    if (key === 'fileTypeInvalid') {
-      return `Invalid file type. Accepted: ${params?.acceptedTypes}`;
-    }
     return translations[key] || key;
   },
 }));
